@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+              android:orientation="vertical"
+             android:layout_height="match_parent"
+              android:id="@+id/bigsmall"
+              android:background="#635e5e"
+             tools:context="com.example.porysovann.kit_project.Fragment.bigger_or_smaller">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp"
+                android:textColor="#FFFFFF"
+                android:textSize="40dp"
+                android:text="Bigger or Smaller"/>
+
+            <TextView
+
+                android:layout_gravity="center"
+                android:textColor="#FFFF"
+                android:textSize="70dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/txt_random"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/btn_big"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:padding="5dp"
+            android:src="@drawable/big"/>
+
+        <ImageView
+            android:id="@+id/btn_small"
+            android:padding="5dp"
+            android:onClick=""
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/small"/>
+
+    </LinearLayout>
+
+</LinearLayout>
